@@ -1,0 +1,17 @@
+{
+  "name": "data",
+  "version": "1.0.0",
+  "description": "Data 계층의 모듈. Core 모듈에 의존성을 가지고있습니다.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wongueShin",
+  "license": "MIT",
+  "dependencies": {
+    "core" : "^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.3"
+  }
+}

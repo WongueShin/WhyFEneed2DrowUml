@@ -1,0 +1,14 @@
+{
+  "name": "core",
+  "version": "1.0.0",
+  "description": "Core 계층의 모듈. 다른 모든 모듈에 독립적이여야 합니다.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wongueShin",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.8.3"
+  }
+}
