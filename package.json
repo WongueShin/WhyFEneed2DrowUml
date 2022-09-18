@@ -1,4 +1,5 @@
 {
+  "author": "wongueShin",
   "private" : true,
   "workspaces" : [
     "core",
