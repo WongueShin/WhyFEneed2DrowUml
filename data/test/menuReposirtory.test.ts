@@ -2,9 +2,9 @@ import { Menu } from "core/menu/menu";
 import { MenuRepository } from "data/menuRepsitory/menuRepository";
 import { expect, test } from "@jest/globals";
 
-test("Menu Repo 는, , 지정한 개수의 상점 목록들을 가져 올 수 있다.", async () => {
+test("Menu Repo 는, 지정한 개수의 상점 목록들을 가져 올 수 있다.", async () => {
   // given: Menu Repository 와, 가져올 메뉴의 개수를 설정한다.
-  const menuRepo: MenuRepository = new MenuRepository();
+  const menuRepo: MenuRepository = MenuRepository.newInstance();
   let listLen: number = Math.floor(Math.random() * 10);
 
   // when: MenuReposiroy 에서 데이터를 가져오려 시도한다.

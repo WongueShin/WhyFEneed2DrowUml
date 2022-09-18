@@ -1,7 +1,15 @@
 import { Menu } from "core/menu/menu";
 import { faker } from "@faker-js/faker";
 
-export class MenuRepository {
+export abstract class MenuRepository {
+    abstract fetchMenuList(menuLength: number | null): Promise<Array<Menu>>;
+
+    static newInstance():MenuRepository {
+        return new MenuRepositoryImlp();
+    }
+}
+
+class MenuRepositoryImlp {
   async fetchMenuList(menuLength: number | null): Promise<Array<Menu>> {
     const menuListLength: number =
       menuLength ?? parseInt(faker.random.numeric(1) + 1);
