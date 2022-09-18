@@ -15,7 +15,7 @@ export class StoreRepository {
       storeList.push(
         ((): Store => {
           var store: Store = {
-            indentifitionInfo: faker.random.alphaNumeric(),
+            indentifitionInfo: faker.random.alphaNumeric(9),
             thumbnailUrl: faker.image.imageUrl(),
             storeName: faker.lorem.word(),
           };

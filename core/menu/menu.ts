@@ -1,4 +1,4 @@
-interface Menu {
+export interface Menu {
     indentifitionInfo: string;
     thumbnailUrl: string;
     menuName: string;
